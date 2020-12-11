@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube3- 루빅스 큐브 구현하기</title>
+</head>
+
+<body>
+    <h1>루빅스 큐브 구현</h1>
+    <div>
+        <h2>동작 예시</h2>
+        >F : 앞 시계 방향 / F' : 앞 반시계 방향<br>
+        >B : 뒤 시계 방향 / B' : 뒤 반시계 방향<br>
+        >R : 우 시계 방향 / R' : 우 반시계 방향<br>
+        >L : 좌 시계 방향 / L' : 좌 반시계 방향<br>
+        >U : 위 시계 방향 / U' : 위 반시계 방향<br>
+        >D : 아래 시계 방향 / D' : 아래 반시계 방향<br>
+        >? : 큐브 무작위 섞기<br>
+        <br>
+    </div>
+    <div>
+        Type movitaion : <input type="text" id="move">
+        <button onclick="main()">실행</button>
+        <button id="start">타이머시작</button>
+        <button id="finish">타이머종료</button>
+    </div>
+    <h2>초기상태</h2>
+    <h3>(정면 가운데 블럭이 White 기준입니다.)</h3>
+    <div>
+        <p>
+            G G G<br>
+            G G G<br>
+            G G G<br>
+        </p>
+        <p>
+            W W W&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O O O&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y Y Y&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R R R<br>
+            W W W&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O O O&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y Y Y&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R R R<br>
+            W W W&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O O O&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Y Y Y&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R R R<br>
+        </p>
+        <p>
+            B B B<br>
+            B B B<br>
+            B B B<br>
+        </p>
+    </div>
+    <p>
+    <div id="userInput"></div>
+    </p>
+    <p>
+    <div id="result"></div>
+    </p>
+    <script src="cube3.js"></script>
+</body>
+
+</html>
