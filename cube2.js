@@ -2,7 +2,7 @@ function main() {
     const userInput = document.getElementById('userInput');
     const result = document.getElementById('result');
     const move = document.getElementById('move').value.toUpperCase();
-    let firstArr = [['R', 'R', 'W'], ['G', 'C', 'W'], ['G', 'B', 'B']];
+    const firstArr = [['R', 'R', 'W'], ['G', 'C', 'W'], ['G', 'B', 'B']];
 
     let ret = firstArr; // 첫 시작 초기상태 세팅
     let str = ''; //큐브 각 동작마다 출력할 문자열
